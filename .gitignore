@@ -1,0 +1,26 @@
+**/target/
+Cargo.lock
+
+# Custom MSCT project sensitive data
+wallets/
+.env
+.env*.local
+
+# Databases and data
+*.db
+*.localdb
+/data/
+
+# Editor / IDE configurations
+.vscode/
+.idea/
+*.iml
+
+*.cbor
+
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+Desktop.ini

@@ -1,0 +1,14 @@
+# .cargo/config.toml
+# Build configuration for Supply Chain Blockchain
+# This sets the build target to the user's home .cargo directory
+# to avoid Windows Application Control policy restrictions on Desktop paths.
+
+[build]
+target-dir = "C:\\Users\\loner\\.cargo\\scb-target"
+
+[net]
+retry = 2
+
+[term]
+verbose = false
+color = "always"

@@ -1,0 +1,30 @@
+[package]
+name = "supply_chain_blockchain"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "supply_chain_blockchain"
+path = "src/main.rs"
+
+[dependencies]
+tokio = { version = "1", features = ["full"] }
+serde = { version = "=1.0.152", features = ["derive"] }
+serde_json = "=1.0.91"
+sha2 = "0.10"
+hex = "0.4"
+ed25519-dalek = { version = "2", features = ["rand_core"], default-features = false }
+rand = { version = "0.8", features = ["std", "std_rng"] }
+dotenvy = "0.15"
+clap = { version = "4", features = ["derive"] }
+chrono = { version = "0.4", features = ["serde", "clock"], default-features = false }
+uuid = { version = "1", features = ["v4", "serde"] }
+anyhow = "1"
+async-trait = "0.1"
+colored = "2"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
