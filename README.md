@@ -1,4 +1,4 @@
-# Supply Chain Blockchain — Rust
+# Multiplexed Supply Chain with Tags (MSCT) — Rust
 
 A fully modular, multi-terminal supply chain tracking system built in Rust.  
 Uses TCP peer-to-peer communication, SHA-256 Merkle-tree hashing, ED25519 signatures, and >67% consensus voting — with a built-in in-memory mock database so you can test **locally with zero infrastructure**.
